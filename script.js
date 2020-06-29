@@ -4,7 +4,7 @@ const minutes = document.getElementById('minutes');
 const seconds = document.getElementById('seconds');
 const countdown = document.getElementById('countdown');
 const year = document.getElementById('year');
-const loading = document.getElementById('loading');
+// const loading = document.getElementById('loading');
 
 const currentYear = new Date().getFullYear();
 
@@ -30,11 +30,12 @@ function updateCountdown() {
   seconds.innerHTML = s < 10 ? '0' + s : s;
 }
 
-// Show spinner before countdown
-setTimeout(() => {
-  loading.remove();
-  countdown.style.display = 'flex';
-}, 1000);
+// // Show spinner before countdown
+// setTimeout(() => {
+//   loading.remove();
+//   countdown.style.display = 'flex';
+// }, 1000);
 
 // Run every second
+updateCountdown();
 setInterval(updateCountdown, 1000);

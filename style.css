@@ -31,14 +31,13 @@ h1 {
   z-index: -1;
   opacity: 0.2;
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .countdown {
-  /* display: flex; */
-  display: none;
+  display: flex;
   transform: scale(2)
 }
 
@@ -57,6 +56,10 @@ h1 {
 @media (max-width: 500px) {
   h1 {
     font-size: 45px;
+  }
+
+  .year {
+    font-size: 120px;
   }
 
   .time {
